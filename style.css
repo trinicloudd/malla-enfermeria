@@ -1,11 +1,13 @@
 body {
   font-family: sans-serif;
   padding: 20px;
-  background: #f9f9f9;
+  background: #fff0f5;
+  margin: 0;
 }
 h1 {
   text-align: center;
-  color: #004d40;
+  color: #880e4f;
+  margin-bottom: 30px;
 }
 .malla {
   display: flex;
@@ -14,30 +16,32 @@ h1 {
   justify-content: center;
 }
 .semestre {
-  border: 1px solid #ccc;
+  border: 1px solid #f8bbd0;
   padding: 10px;
-  width: 200px;
-  background-color: #ffffff;
-  border-radius: 8px;
+  width: 220px;
+  background-color: #fce4ec;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .semestre h2 {
   text-align: center;
+  color: #ad1457;
   font-size: 1.1em;
   margin-bottom: 10px;
-  color: #00796b;
 }
 .ramo {
-  background-color: #e0f7fa;
-  border: 1px solid #00acc1;
-  padding: 8px;
-  margin: 5px 0;
+  background-color: #f8bbd0;
+  border: none;
+  padding: 10px;
+  margin: 6px 0;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
   transition: background 0.2s ease;
+  font-size: 0.95em;
 }
 .ramo:hover {
-  background-color: #b2ebf2;
+  background-color: #f48fb1;
 }
 #info-box {
   margin-top: 30px;
@@ -48,4 +52,9 @@ h1 {
 }
 .oculto {
   display: none;
+}
+@media (max-width: 600px) {
+  .semestre {
+    width: 100%;
+  }
 }
