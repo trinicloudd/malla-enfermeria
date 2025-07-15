@@ -1,1 +1,34 @@
-<h1>Malla curricular en construcción</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Curricular - Enfermería UDD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Malla Curricular Enfermería - UDD Santiago</h1>
+  <div class="malla">
+    <div class="semestre">
+      <h2>Semestre 1</h2>
+      <div class="ramo" onclick="mostrarInfo('BasesBiologicas')">Bases Biológicas</div>
+      <div class="ramo" onclick="mostrarInfo('Morfologia')">Morfología</div>
+      <div class="ramo" onclick="mostrarInfo('BasesQuimicas')">Bases Químicas</div>
+      <div class="ramo" onclick="mostrarInfo('BasesCuidado')">Bases del Cuidado de Enfermería</div>
+      <div class="ramo" onclick="mostrarInfo('BasesTeoricas')">Bases Teóricas de Enfermería y Bioética</div>
+      <div class="ramo" onclick="mostrarInfo('MatematicaEstadistica')">Bases Matemáticas y Estadísticas</div>
+    </div>
+    <div class="semestre">
+      <h2>Semestre 2</h2>
+      <div class="ramo" onclick="mostrarInfo('Fisiologia')">Fisiología Básica</div>
+      <div class="ramo" onclick="mostrarInfo('Psicologia')">Psicología de la Salud</div>
+      <div class="ramo" onclick="mostrarInfo('EducacionSalud')">Educación para la Salud</div>
+      <div class="ramo" onclick="mostrarInfo('Critica')">Lectura / Pensamiento Crítico</div>
+      <div class="ramo" onclick="mostrarInfo('Cuidados1')">Cuidados de Enfermería del Adulto I</div>
+      <div class="ramo" onclick="mostrarInfo('Ingles1')">Inglés Técnico</div>
+    </div>
+  </div>
+  <div id="info-box" class="oculto"></div>
+  <script src="script.js"></script>
+</body>
+</html>
